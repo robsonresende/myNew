@@ -65,6 +65,11 @@ a:hover {
 	padding-right: 0.5em;
 }
 
+/****** ajustando a centralização do conteudo ******/
+#conteudo p {
+	margin-bottom: 4em;
+}
+
 header {
 	max-width: 90%;
 	margin-right: auto;
