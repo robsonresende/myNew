@@ -29,7 +29,7 @@ a:link, a:visited {
 	text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover {
 	color: #ffffff;
 }
 
@@ -96,9 +96,53 @@ nav {
 }
 
 #portifolio {
-	width: 100%;
 	min-height: 100vh;
 	background-color: #ffffff;
+	text-align: center;
+}
+
+.row {
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 2em;
+	text-align: center;
+}
+
+
+/****** criando colunas iguais e que flutuam próximas umas das outras ******/
+.column {
+	width: 80%;
+	margin: 1em auto 2em auto;
+	text-align: center;
+}
+
+/****** frame ******/
+.frame {
+	max-width: 500px;
+	border: rgba(0,0,204, 0.5) 1px solid;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.frame:hover {
+	transform: scale(1.05, 1.05);
+}
+
+.img-card {
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.text-card {
+	text-align: center;
+	background-color: rgba(0,0,204, 0.5);
+	max-width: 100%;
+}
+
+.text-card p {
+	padding: 0 !important;
+	margin: 0;
 }
 
 #contato {
@@ -147,13 +191,25 @@ nav {
 
 /*********** dispositivos médios ***********/
 @media (min-width: 768.01px) and (max-width: 1200px) {
+	.column {
+		width: 80%;
+	}
 
+	.frame {
+		max-width: 400px;
+	}
 }
 
 
 /*********** dispositivos pequenos ***********/
 @media (min-width: 576.01px) and (max-width: 768px) {
+	.column {
+		width: 80%;
+	}
 
+	.frame {
+		max-width: 350px;
+	}
 }
 
 /*********** dispositivos extra pequenos ***********/
@@ -166,6 +222,14 @@ nav {
 
 	header {
 		text-align: center;
+		max-width: 100%;
+	}
+
+	.column {
+		width: 98%;
+	}
+
+	.frame {
 		max-width: 100%;
 	}
 }
