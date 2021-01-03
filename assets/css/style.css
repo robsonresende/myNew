@@ -82,6 +82,18 @@ nav {
 	padding-top: 1em;
 }
 
+#icones {
+	min-width: 8em;
+	font-size: 1.75em;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -0.5em);
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
 #portifolio {
 	width: 100%;
 	min-height: 100vh;
@@ -130,6 +142,7 @@ nav {
 	background-color: #000000;
 	color: #ffffff;
 }
+
 
 /*********** dispositivos médios ***********/
 @media (min-width: 768.01px) and (max-width: 1200px) {
