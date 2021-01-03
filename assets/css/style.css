@@ -23,13 +23,13 @@ p {
   	font-style: italic;
 }
 
-a:link, a:visited, a:active {
+a:link, a:visited {
 	font-weight: bold;
 	color: #000000;
 	text-decoration: none;
 }
 
-a:hover {
+a:hover, a:active {
 	color: rgba(255,255,255, 0.7);
 }
 
@@ -80,6 +80,17 @@ header {
 nav {
 	float: right;
 	padding-top: 1em;
+}
+
+/****** estilizando o menu ******/
+#menu a {
+	border-radius: 3px;
+	border: #000000 2px solid;
+	padding: 0 0.2em 0 0.2em;
+}
+
+#menu a:hover {
+	border: rgba(255,255,255, 0.7) 2px solid;
 }
 
 #icones {
@@ -222,6 +233,10 @@ nav {
 	header {
 		text-align: center;
 		max-width: 100%;
+	}
+
+	#menu {
+		display: none;
 	}
 
 	.column {
