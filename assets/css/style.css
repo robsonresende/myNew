@@ -30,7 +30,7 @@ a:link, a:visited, a:active {
 }
 
 a:hover {
-	color: #ffffff;
+	color: rgba(255,255,255, 0.7);
 }
 
 /****** overlay ******/
@@ -45,7 +45,6 @@ a:hover {
   background-color: rgba(255,255,255,0.25);
   z-index: -2;
 }
-
 
 /****** configurando o cabeçalho ******/
 #logo {
@@ -166,7 +165,7 @@ nav {
 
 #foto {
 	border-radius: 50%;
-	border: #ffffff 5px solid;
+	border: rgba(255,255,255, 0.5) 5px solid;
 	max-width: 90%;
 	height: auto;
 }
@@ -178,13 +177,13 @@ nav {
 .generic-btn {
 	padding: 0.75em;
 	border-radius: 5px;
-	background-color: #ffffff;
+	background-color: rgba(255,255,255, 0.5);
 	color: #000000;
 	font-weight: bold;
 }
 
 .generic-btn:hover {
-	background-color: #000000;
+	background-color: rgba(0,0,0, 0.5);
 	color: #ffffff;
 }
 
