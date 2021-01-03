@@ -18,7 +18,8 @@ body {
 p {
 	padding: 0 0.5em 0 0.5em;
 	text-align: justify;
-  text-justify: inter-word;
+  	text-justify: inter-word;
+  	font-style: italic;
 }
 
 a {
@@ -50,30 +51,27 @@ a:hover {
 	font-size: 2em;
 }
 
-#conteudo {
-	text-align: center;
+#inicial {
 	width: 100%;
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center
 }
 
-#conteudo * {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+#conteudo {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
-/****** ajustando a centralização do conteudo ******/
 #conteudo p {
-	margin-bottom: 8em;
+	text-align: center;
 }
 
 header {
 	max-width: 90%;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 1em auto 0 auto;
 	background-color: transparent;
 }
 
